@@ -34,6 +34,7 @@ a {
 }
 /* 商品分类的css */
 #wrip #goods {
+  margin-top: -20px; 
   width: 100%;
   height: 113px;
   background-color: #fff;
@@ -68,6 +69,7 @@ a {
 }
 /* 轮播图的css */
 #wrip #img_box {
+  margin-top: -40px; 
   width: 100%;
   height: 480px;
   position: relative;
@@ -87,20 +89,21 @@ a {
   font-family: "微软雅黑";
 }
 #wrip #img_box > div .box_top {
+  
   height: 64.8px;
   padding-bottom: 20px;
-  transform: translateY(207.6px);
+  transform: translateY(207.6px) translateX(-20px);
 }
 #wrip #img_box > div .box_bottom {
   font-size: 24px;
   height: 32px;
-  transform: translateY(200px);
+  transform: translateY(200px) translateX(100px);
 }
 #wrip #img_box > div:nth-child(2) div {
   color: black;
 }
 #wrip #img_box > div:nth-child(1) {
-  background-image: url(../imgs/banner1.jpg);
+  background-image: url(../imgs/10.png);
   background-position: center;
   background-size: cover;
   z-index: 1;
@@ -177,16 +180,13 @@ a {
   padding: 50px 0;
 }
 #main .main_top {
-  width: 1200px;
+  width: 1600px; /* 增加总宽度，包括右侧两个块的宽度 */
   display: flex;
   margin-bottom: 20px;
   /* border: 1px solid red */
 }
-/* #main .main_top div{
-    width: 390px;
-    height: 547px;
-} */
-#main .main_top div.main_top_left{
+
+#main .main_top div.main_top_left {
   width: 390px;
   height: 547px;
   background-size: 390px;
@@ -194,6 +194,13 @@ a {
   position: relative;
   background-color: #fff;
 }
+
+#main .main_top div.main_top_left:nth-child(2),
+#main .main_top div.main_top_left:nth-child(3) {
+  margin-right: 15px;
+}
+
+
 #main .main_top div.main_top_left:hover>a>img{
   display: inline-block;
 }
@@ -258,16 +265,18 @@ a {
 }
 #main .main_min .main_bottom > a:nth-child(1) > div {
   width: 592px;
-  height: 395px;
-  background-image: url(https://stormsend1.djicdn.com/stormsend/uploads/8193accf66654676425ca7c303d37c77.jpg);
+  height: 450px;
+  /* background-image: url(https://stormsend1.djicdn.com/stormsend/uploads/8193accf66654676425ca7c303d37c77.jpg); */
+  background-image: url(../imgs/edgecomputingbox1.jpg);
   background-size: 592px;
   margin-right: 16px;
   /* background-position: 0 2px; */
 }
 #main .main_min .main_bottom > a:nth-child(2) > div {
   width: 592px;
-  height: 395px;
-  background-image: url(https://stormsend1.djicdn.com/stormsend/uploads/90badd9b7a75e194a2edc2e007507831.jpg);
+  height: 450px;
+  /* background-image: url(https://stormsend1.djicdn.com/stormsend/uploads/90badd9b7a75e194a2edc2e007507831.jpg); */
+  background-image: url(../imgs/edgecomputingbox4.jpg);
   background-size: 592px;
 }
 #main .main_min .main_bottom p {
@@ -349,6 +358,83 @@ a {
   color: #3b3e40;
 }
 #main .main_min_bottom .main-ft {
+  width: 1600px; /* 增加总宽度，包括右侧三个块的宽度 */
+  height: 872px;
+  /* transform: translateX(20px);  */
+}
+#main .main_min_bottom .main-ft .ft-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main .main_min_bottom .main-ft .ft-ul li {
+  position: relative;
+  width: 288px;
+  height: 420px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+#main .main_min_bottom .main-ft .ft-ul li:nth-child(4),
+#main .main_min_bottom .main-ft .ft-ul li:nth-child(8),
+#main .main_min_bottom .main-ft .ft-ul li:nth-child(12) {
+  margin-right: 0;
+}
+#main .main_min_bottom .main-ft ul li a {
+  display: inline-block;
+  width: 288px;
+  height: 420px;
+}
+#main .main_min_bottom .main-ft ul li a .li_img {
+  width: 288px;
+  height: 288px;
+}
+#main .main_min_bottom .main-ft ul li img {
+  position: absolute;
+  top: 0;
+  width: 288px;
+  height: 288px;
+}
+#main .main_min_bottom .main-ft ul li .li_img div {
+  position: absolute;
+  width: 288px;
+  height: 288px;
+}
+#main .main_min_bottom .main-ft ul li .li_img div p {
+  position: absolute;
+  bottom: 0;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#main .main_min_bottom .main-ft ul li .li_img div {
+  z-index: -1;
+}
+#main .main_min_bottom .main-ft ul li>a:hover .li_img div {
+  z-index: 10;
+}
+#main .main_min_bottom .main-ft ul li .li_text {
+  width: 288px;
+  height: 44px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3b3e40;
+}
+#main .main_min_bottom .main-ft ul li .li_text_two {
+  width: 288px;
+  height: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #3b3e40;
+}
+
+/* #main .main_min_bottom .main-ft {
   width: 1200px;
   height: 872px;
 }
@@ -421,9 +507,10 @@ a {
   width: 288px;
   height: 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   color: #3b3e40;
-}
+} */
+
 a:hover{
   color: blue !important;
 }

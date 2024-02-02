@@ -146,18 +146,18 @@
 #header .bottom_header .left_center{
     position: absolute;
     display: flex;
-    left: 165px;
+    left: 150px;
     top: 50%;
-    width: 400px;
+    width: 600px;
     height: 64px;
     justify-content: space-between;
     transform: translateY(-50%);
-    font-size: 14px !important;
+    font-size: 20px !important;
     font-family: '微软雅黑';
 }
 #header .bottom_header .right{
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 50%;
     margin-top: -25px;
     width:300px;
