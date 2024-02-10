@@ -46,9 +46,9 @@
   #foot .area .foot_link {
     width: 1200px;
     min-width: 1200px;
-    height: 376px;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    height: 10px;
+    /* padding-top: 70px;
+    padding-bottom: 50px; */
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -122,14 +122,12 @@
     margin-right: 20px;
     color: #6c7073;
     line-height: 36px;
-    font-size: 12px;
+    font-size: 14px;
     vertical-align: top;
     font-family: "微软雅黑";
     margin-left: -5px;
   }
-  #foot .area .foot_bottom .cnt_left .foot_logo {
-    font-size: 30px !important;
-  }
+
   #foot .area .foot_bottom .cnt_right {
     width: 180px;
     height: 40px;
@@ -165,6 +163,13 @@
   #foot .area .foot_bottom .cnt_right a {
     margin: 0 10px;
   }
+  #foot .area .foot_bottom .cnt_right .additional_text {
+    display: inline-block;
+    color: #6c7073;
+    font-size: 14px;
+    margin-left: 10px; /* 调整间距 */
+}
+
   /* 最后 */
   #foot .footer_copy {
     width: 1200px;

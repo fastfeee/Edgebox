@@ -103,7 +103,7 @@ a {
   color: black;
 }
 #wrip #img_box > div:nth-child(1) {
-  background-image: url(../imgs/10.png);
+  background-image: url(../imgs/banner1.png);
   background-position: center;
   background-size: cover;
   z-index: 1;
@@ -247,7 +247,7 @@ a {
 }
 #main .main_top div a .item-info div.item-top {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
 #main .main_top div a .item-info div.item-center {
   margin-top: 16px;
@@ -264,19 +264,16 @@ a {
   display: flex;
 }
 #main .main_min .main_bottom > a:nth-child(1) > div {
-  width: 592px;
-  height: 450px;
-  /* background-image: url(https://stormsend1.djicdn.com/stormsend/uploads/8193accf66654676425ca7c303d37c77.jpg); */
-  background-image: url(../imgs/edgecomputingbox1.jpg);
+  width: 590px;
+  height: 480px;
+  background-image: url(../imgs/production.png);
   background-size: 592px;
   margin-right: 16px;
-  /* background-position: 0 2px; */
 }
 #main .main_min .main_bottom > a:nth-child(2) > div {
-  width: 592px;
-  height: 450px;
-  /* background-image: url(https://stormsend1.djicdn.com/stormsend/uploads/90badd9b7a75e194a2edc2e007507831.jpg); */
-  background-image: url(../imgs/edgecomputingbox4.jpg);
+  width: 590px;
+  height: 480px;
+  background-image: url(../imgs/live.png);
   background-size: 592px;
 }
 #main .main_min .main_bottom p {
@@ -292,7 +289,8 @@ a {
 #main .main_min_bottom {
   width: 1200px;
   min-width: 1200px;
-  margin: 48px auto;
+  /* margin: 48px auto; */
+  margin: 0 auto 48px;
 }
 #main .main_min_bottom .main-hr {
   height: 48px;
@@ -331,6 +329,7 @@ a {
   background-repeat: no-repeat;
   background-position: 0 90px;
 }
+
 #main .main_min_bottom .main-cnt a:nth-child(1) .a_right {
   width: 260px;
   padding-top: 120px;
@@ -357,10 +356,9 @@ a {
   line-height: 20px;
   color: #3b3e40;
 }
-#main .main_min_bottom .main-ft {
-  width: 1600px; /* 增加总宽度，包括右侧三个块的宽度 */
+/* #main .main_min_bottom .main-ft {
+  width: 1600px; 
   height: 872px;
-  /* transform: translateX(20px);  */
 }
 #main .main_min_bottom .main-ft .ft-ul {
   display: flex;
@@ -432,7 +430,7 @@ a {
   text-align: center;
   font-size: 20px;
   color: #3b3e40;
-}
+} */
 
 /* #main .main_min_bottom .main-ft {
   width: 1200px;
