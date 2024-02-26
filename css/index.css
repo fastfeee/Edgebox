@@ -180,7 +180,7 @@ a {
   padding: 50px 0;
 }
 #main .main_top {
-  width: 1600px; /* 增加总宽度，包括右侧两个块的宽度 */
+  width: 1200px; /* 增加总宽度，包括右侧两个块的宽度 */
   display: flex;
   margin-bottom: 20px;
   /* border: 1px solid red */
